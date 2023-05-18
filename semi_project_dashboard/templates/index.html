@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Purple Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="static/assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="static/assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="static/assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="static/assets/images/favicon.ico" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <div class="row p-0 m-0 proBanner" id="proBanner">
+        <div class="col-md-12 p-0 m-0">
+          <div class="card-body card-body-padding d-flex align-items-center justify-content-between">
+            <div class="ps-lg-1">
+              <div class="d-flex align-items-center justify-content-between">
+                <p class="mb-0 font-weight-medium me-3 buy-now-text">Free 24/7 customer support, updates, and more with this template!</p>
+                <a href="https://www.bootstrapdash.com/product/purple-bootstrap-admin-template/?utm_source=organic&utm_medium=banner&utm_campaign=buynow_demo" target="_blank" class="btn me-2 buy-now-btn border-0">Get Pro</a>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="https://www.bootstrapdash.com/product/purple-bootstrap-admin-template/"><i class="mdi mdi-home me-3 text-white"></i></a>
+              <button id="bannerClose" class="btn border-0 p-0">
+                <i class="mdi mdi-close text-white me-0"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- partial:partials/_navbar.html -->
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+          <a class="navbar-brand brand-logo" href="/"><img height="80px" src="static/assets/images/mylogo.jpg" alt="logo" /></a>
+          <a class="navbar-brand brand-logo-mini" href="/"><img src="static/assets/images/logo-mini.svg" alt="logo" /></a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-menu"></span>
+          </button>
+          <div class="search-field d-none d-md-block">
+            <form class="d-flex align-items-center h-100" action="#">
+              <div class="input-group">
+                <div class="input-group-prepend bg-transparent">
+                  <i class="input-group-text border-0 mdi mdi-magnify"></i>
+                </div>
+                <input type="text" class="form-control bg-transparent border-0" placeholder="Search projects">
+              </div>
+            </form>
+          </div>
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item d-none d-lg-block full-screen-link">
+              <a class="nav-link">
+                <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+              </a>
+            </li>
+
+
+            <li class="nav-item nav-logout d-none d-lg-block">
+              <a class="nav-link" href="#">
+                <i class="mdi mdi-power"></i>
+              </a>
+            </li>
+            <li class="nav-item nav-settings d-none d-lg-block">
+              <a class="nav-link" href="#">
+                <i class="mdi mdi-format-line-spacing"></i>
+              </a>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <span class="menu-title">대시보드</span>
+                <i class="mdi mdi-home menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/gen_age_page">
+                <span class="menu-title">성별/연령별 차트</span>
+                <i class="mdi mdi-contacts menu-icon"></i>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/year_month_page">
+                <span class="menu-title">년월별 차트</span>
+                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/time_page">
+                <span class="menu-title">업종별 차트</span>
+                <i class="mdi mdi-chart-bar menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/region_page">
+                <span class="menu-title">구역별 차트</span>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/gallary_page">
+                <span class="menu-title">갤러리</span>
+                <i class="mdi mdi-medical-bag menu-icon"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2">
+                  <i class="mdi mdi-home"></i>
+                </span> Dashboard
+              </h3>
+              <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="row">
+              <div class="col-md-5 stretch-card grid-margin">
+                <div class="card bg-gradient-danger card-img-holder text-white">
+                  <div class="card-body" style="padding-top: 30px; padding-bottom 10px">
+                    <img src="static/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                    <table width = '600px'>
+                      <tr>
+                        <td width="100px", style="text-align:left"><h4 class="font-weight-normal mb-3"><b> 성별 </b><i class="mdi mdi-chart-line mdi-24px float-right"></i></h4></td>
+                        <td width="450px", style="text-align:right">
+                        <div style="width:450px;height:200px;overflow:hidden;position: relative;border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;">
+                          <iframe style = "position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%)" width="450" height="300" frameborder="0" scrolling="no" src="//plotly.com/~aroma1532/96.embed"></iframe>
+                      </div>
+                        </td>
+                      </tr>
+                    </table>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7 stretch-card grid-margin">
+                <div class="card bg-gradient-info card-img-holder text-white">
+                  <div class="card-body" style="padding-top: 30px; padding-bottom 10px">
+                    <img src="static/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                    <table width = '800px'>
+                      <tr>
+                        <td width="100px" style="text-align:left">
+                          <h4 class="font-weight-normal mb-3"><b>연령 </b><i class="mdi mdi-bookmark-outline mdi-24px float-right"></i></h4>
+                        </td>
+                        <td width="700", style="text-align:right">
+
+<div style="width:700px;height:200px;overflow:hidden;position: relative;border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;">
+<iframe style = "position: absolute;left: 50%;top: 45%;transform: translate(-50%,-50%)" width="700" height="320" frameborder="0" scrolling="no" src="//plotly.com/~aroma1532/33.embed"></iframe>
+</div>
+
+                        </td>
+
+                      </tr>
+
+                    </table>
+
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-md-7 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <table>
+                      <tr><h4 class="card-title float-left"><b>연도별 소비패턴</b></h4></tr>
+                      <tr style="text-align:left">
+                         <div style="width:800px;height:400px;overflow:hidden;position: relative;">
+
+
+                           <iframe style="position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%)" width="800px" height="500px" frameborder="0" scrolling="no" src="//plotly.com/~jisu_asiae/75.embed"></iframe>
+<!--                    <iframe style="position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%)" width="800px" height="500px" frameborder="0" scrolling="no" src="//plotly.com/~jisu_asiae/83.embed"></iframe>-->
+                        </div>
+                      </tr>
+                    </table>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title"><b>구역별 소비패턴</b></h4>
+                        <input type="button"  style="border: 1px solid #bbbbbb; background: transparent;border-radius: 5px;" name='add' id ='rest_button_text_text' value="금액">
+                        <input type="button"  style="border: 1px solid #bbbbbb; background: transparent;border-radius: 5px;" name='add' id ='rest_button_text_text2' value="건수">
+                        <input type="button"  style="border: 1px solid #bbbbbb; background: transparent;border-radius: 5px;" name='add' id ='rest_button_text_text3' value="인구수">
+
+                    <div id="traffic-chart-legend" class="rounded-legend legend-vertical legend-bottom-left pt-4"></div>
+                    <div id="map_div">
+                      {{KEY_MAP|safe}}
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title"><b>시간대별 소비패턴</b></h4>
+                <table>
+                  <tr>
+                    <td>
+                      <div style="width:700px;height:500px;overflow:hidden;position: relative;">
+                      <iframe width="700" height="600" frameborder="0" scrolling="no" src="//plotly.com/~blueblue987/29.embed"></iframe>
+                      </div>
+                    </td>
+                    <td>
+                      <div style="width:700px;height:500px;overflow:hidden;position: relative;">
+                      <iframe width="700" height="600" frameborder="0" scrolling="no" src="//plotly.com/~blueblue987/31.embed"></iframe>
+                      </div>
+                    </td>
+
+                  </tr>
+
+                </table>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">News</h4>
+                    <div class="table-responsive">
+                      <table style="width:650px; border-top: 1px solid #999999; border-collapse: collapse;">  <!---->
+                        <thead>
+                          <tr style="border-bottom: 1px solid #999999;padding: 10px;">
+                            <th style="witdh: 230px; height:30px; align:center"><b> # </b></th>
+                            <th style="align:left"><b> 상세 </b></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        {% for dic in NEWS_DIC %}
+                          <tr style="border-bottom: 1px solid #999999;padding: 10px;">
+                            <td>
+                              <a href="{{dic[1]}}">
+                              <img style= "width:180px; height:100px" src=" {{dic[2]}}"> </a></td>
+                            <td><a href="{{dic[1]}}" style="text-decoration:none; color:#111111">
+                              <b>{{dic[0]}}</b><br>{{dic[3]}} </a></td>
+                          </tr>
+                        {% endfor %}
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Youtube News</h4>
+                    <div class="table-responsive">
+                      <table style="width:650px; border-top: 1px solid #999999; border-collapse: collapse;">  <!---->
+                        <thead>
+                          <tr style="border-bottom: 1px solid #999999;padding: 10px;">
+                            <th style="witdh: 230px; height:30px; align:center"><b> # </b></th>
+                            <th style="align:left"><b> 상세 </b></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        {% for dic in YTB_DIC %}
+                          <tr style="border-bottom: 1px solid #999999;padding: 10px;">
+                            <td>
+                              <a href="{{dic['url']}}">
+                              <img style= "width:180px; height:100px" src=" {{dic['img']}}"> </a></td>
+                            <td><a href="{{dic['url']}}" style="text-decoration:none; color:#111111">
+                              <b>{{dic['title']}}</b><br> 조회수: {{dic['cnt']}} </a></td>
+                          </tr>
+                        {% endfor %}
+
+                        </tbody>
+                      </table>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+            <div class="container-fluid d-flex justify-content-between">
+              <span class="text-muted d-block text-center text-sm-start d-sm-inline-block">Copyright © bootstrapdash.com 2021</span>
+              <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin template</a> from Bootstrapdash.com</span>
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="static/assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="static/assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="static/assets/js/jquery.cookie.js" type="text/javascript"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="static/assets/js/off-canvas.js"></script>
+    <script src="static/assets/js/hoverable-collapse.js"></script>
+    <script src="static/assets/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="static/assets/js/dashboard.js"></script>
+    <script src="static/assets/js/todolist.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+
+$(document).ready(function(){
+  $(document).on("click", "#rest_button_text_text", function () {
+
+      $.ajax({ url: "/form_rest_text_text",
+             method      :"POST",
+             data        : {"usrid":"hellodddd"},
+             contentType : "application/x-www-form-urlencoded; charset=UTF-8",  //내 데이터는 글씨예요
+             dataType    : "json", //결과는 json로 주세요
+             error       : function(eres){ alert(eres) },
+             success     : function(res){
+                  $( "#map_div" ).empty();
+                  $( "#map_div" ).append(res['msg']);
+
+             }
+      });
+  });
+
+  $(document).on("click", "#rest_button_text_text2", function () {
+
+      $.ajax({ url: "/form_rest_text_text2",
+             method      :"POST",
+             data        : {"usrid":"hellodddd"},
+             contentType : "application/x-www-form-urlencoded; charset=UTF-8",  //내 데이터는 글씨예요
+             dataType    : "json", //결과는 json로 주세요
+             error       : function(eres){ alert(eres) },
+             success     : function(res){
+                  $( "#map_div" ).empty();
+                  $( "#map_div" ).append(res['msg']);}
+      });
+  });
+
+  $(document).on("click", "#rest_button_text_text3", function () {
+
+      $.ajax({ url: "/form_rest_text_text3",
+             method      :"POST",
+             data        : {"usrid":"hellodddd"},
+             contentType : "application/x-www-form-urlencoded; charset=UTF-8",  //내 데이터는 글씨예요
+             dataType    : "json", //결과는 json로 주세요
+             error       : function(eres){ alert(eres) },
+             success     : function(res){
+                  $( "#map_div" ).empty();
+                  $( "#map_div" ).append(res['msg']);}
+      });
+  });
+
+});
+</script>
+
+
+    <!-- End custom js for this page -->
+  </body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Purple Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="static/assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="static/assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="static/assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="static/assets/images/favicon.ico" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_navbar.html -->
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+          <a class="navbar-brand brand-logo" href="/"><img height="80px" src="static/assets/images/mylogo.jpg" alt="logo" /></a>
+          <a class="navbar-brand brand-logo-mini" href="/"><img src="static/assets/images/logo-mini.svg" alt="logo" /></a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-menu"></span>
+          </button>
+          <div class="search-field d-none d-md-block">
+            <form class="d-flex align-items-center h-100" action="#">
+              <div class="input-group">
+                <div class="input-group-prepend bg-transparent">
+                  <i class="input-group-text border-0 mdi mdi-magnify"></i>
+                </div>
+                <input type="text" class="form-control bg-transparent border-0" placeholder="Search projects">
+              </div>
+            </form>
+          </div>
+          <ul class="navbar-nav navbar-nav-right">
+
+            <li class="nav-item d-none d-lg-block full-screen-link">
+              <a class="nav-link">
+                <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+              </a>
+            </li>
+
+
+            <li class="nav-item nav-logout d-none d-lg-block">
+              <a class="nav-link" href="#">
+                <i class="mdi mdi-power"></i>
+              </a>
+            </li>
+            <li class="nav-item nav-settings d-none d-lg-block">
+              <a class="nav-link" href="#">
+                <i class="mdi mdi-format-line-spacing"></i>
+              </a>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <span class="menu-title">대시보드</span>
+                <i class="mdi mdi-home menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/gen_age_page">
+                <span class="menu-title">성별/연령별 차트</span>
+                <i class="mdi mdi-contacts menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/year_month_page">
+                <span class="menu-title">년월별 차트</span>
+                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/time_page">
+                <span class="menu-title">업종별 차트</span>
+                <i class="mdi mdi-chart-bar menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/region_page">
+                <span class="menu-title">구역별 차트</span>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="/gallary_page">
+                <span class="menu-title">갤러리</span>
+                <i class="mdi mdi-medical-bag menu-icon"></i>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title"><b> 업종별 차트 </b></h3>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Category</li>
+                </ol>
+              </nav>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title"><b>업종별_건수</b></h4>
+
+                    <iframe width="500" height="300" frameborder="0" scrolling="no" src="//plotly.com/~blueblue987/96.embed"></iframe>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title"><b>업종별_금액</b></h4>
+
+                    <iframe width="500" height="300" frameborder="0" scrolling="no" src="//plotly.com/~blueblue987/98.embed"></iframe>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title"><b>교통_시간대별_카드이용건수</b></h4>
+
+                    <iframe width="1100" height="300" frameborder="0" scrolling="no" src="//plotly.com/~blueblue987/53.embed"></iframe>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title"><b>교통_시간대별_카드이용금액</b></h4>
+
+
+                    <iframe width="1100" height="300" frameborder="0" scrolling="no" src="//plotly.com/~blueblue987/90.embed"></iframe>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title"><b>문화_시간대별_카드이용건수</b></h4>
+
+
+                   <iframe width="1100" height="300" frameborder="0" scrolling="no" src="//plotly.com/~blueblue987/85.embed"></iframe>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title"><b>문화_시간대별_카드이용금액</b></h4>
+
+
+                    <iframe width="1100" height="300" frameborder="0" scrolling="no" src="//plotly.com/~blueblue987/94.embed"></iframe>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+            <div class="container-fluid d-flex justify-content-between">
+              <span class="text-muted d-block text-center text-sm-start d-sm-inline-block">Copyright © bootstrapdash.com 2021</span>
+              <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin template</a> from Bootstrapdash.com</span>
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="static/assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="static/assets/js/off-canvas.js"></script>
+    <script src="static/assets/js/hoverable-collapse.js"></script>
+    <script src="static/assets/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <!-- End custom js for this page -->
+  </body>
+</html>
